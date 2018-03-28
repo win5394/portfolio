@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HYE JUNG KIM</title>
+    <meta name="description" content="A slideshow that shows an animated SVG frame on the transitions between slides" />
+    <meta name="keywords" content="slideshow, javascript, frame, animation, svg, shape, path, web design" />
+    <meta name=" author " content="Codrops " />
+    <link rel="shortcut icon " href="favicon.ico">
+    <link rel="stylesheet " type="text/css " href="css/base.css " />
+    <script>
+        document.documentElement.className = "js ";
+        var supportsCssVars = function() {
+            var e, t = document.createElement("style ");
+            return t.innerHTML = "root: { --tmp-var: bold; } ", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight ", "var(--tmp-var) ")), t.parentNode.removeChild(t), e
+        };
+        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables. ");
+
+    </script>
+</head>
+
+<body class="demo-3 loading ">
+    <main>
+        <div class="content content--fixed ">
+            <header class="codrops-header ">
+                <div class="codrops-links ">
+                    <a class="codrops-icon codrops-icon--prev " href="https://tympanus.net/Development/ExpandingGridItemAnimation/ " title="Previous Demo "><svg class="icon icon--arrow "><use xlink:href="#icon-arrow "></use></svg></a>
+                    <a class="codrops-icon codrops-icon--drop " href="https://tympanus.net/codrops/?p=33037 " title="Back to the article "><svg class="icon icon--drop "><use xlink:href="#icon-drop "></use></svg></a>
+                </div>
+            </header>
+        </div>
+        <div class="slideshow ">
+            <div class="slides ">
+                <div class="slide slide--current ">
+                    <div class="slide__img " style="background-image: url(img/mine12.jpg)"></div>
+                    <h2 class="slide__title "></h2>
+                    <p class="slide__desc "></p>
+                    <a class="slide__link " href="#"></a>
+                </div>
+                <div class="slide ">
+                    <div class="slide__img " style="background-image: url(img/mine13.jpg) "></div>
+                    <h2 class="slide__title ">ABOUT</h2>
+                    <div class="about">
+
+
+                        <div id="my_info">
+                            <div>
+                                <a href="#"><img class="myphoto" src="http://placehold.it/200x200" alt="html"></a>
+                                <ul class="my">
+                                    <li>김혜정</li>
+                                    <li>1994.03.23</li>
+                                    <li>서울 강서구 화곡동</li>
+                                </ul>
+                            </div>
+                            <div id="skill">
+                                <p>SKILLS</p>
+                                <a href="#"><img src="img/icon/ps1.png" alt="html"></a>
+                                <a href="#"><img src="img/icon/ai1.png" alt="html"></a>
+                                <a href="#"><img src="img/icon/html1.png" alt="html"></a>
+                                <a href="#"><img src="img/icon/css1.png" alt="html"></a></div>
+
+                        </div>
+                    </div>
+
+                    <p class="slide__desc ">
+
+                    </p>
+                    <a class="slide__link " href="# "></a>
+                </div>
+                <div class="slide ">
+                    <div class="slide__img " style="background-image: url(img/mine3.jpg) "></div>
+                    <h2 class="slide__title ">PORTFOLIO</h2>
+                    <div class="pofol">
+                        <a href="meritz/index.html"><img src="img/meritz1.jpg" alt="meritz1"></a>
+                        <a href="https://win5394.github.io/myproject1/"><img src="img/jungbo2-1.jpg" alt="jungbo"></a>
+                        <a href=" https://win5394.github.io/project2/"><img src="img/ferero3-1.jpg" alt="ferero3"></a>
+                        <a href="#"><img src="img/ban1.jpg" alt="bans"></a>
+                    </div>
+                    <p class="slide__desc "></p>
+                    <a class="slide__link " href="# ">MORE</a>
+                </div>
+                <div class="slide ">
+                    <div class="slide__img " style="background-image: url(img/mine15.jpg) "></div>
+                    <h2 class="slide__title ">CONTACT</h2>
+                    <div class="slide__desc info">
+                        <p>Phone.E-mail</p>
+                        <p>010-0100-0100</p>
+                        <p>win5394@naver.com</p>
+                    </div>
+                    <a class="slide__link " href="# "></a>
+                </div>
+            </div>
+            <nav class="slidenav ">
+                <button class="slidenav__item slidenav__item--prev ">Previous</button>
+                <span>/</span>
+                <button class="slidenav__item slidenav__item--next ">Next</button>
+            </nav>
+        </div>
+    </main>
+    <script src="js/demo.js "></script>
+    <script src="js/imagesloaded.pkgd.min.js "></script>
+    <script src="js/anime.min.js "></script>
+    <script src="js/demo3.js "></script>
+</body>
+
+</html>
